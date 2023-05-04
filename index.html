@@ -399,38 +399,44 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 		
-          <li>
-            <a href="#Introduction">
-              <i class="bi bi-circle"></i><span>Introduction</span>
-            </a>
-          </li>
-          <li>
-            <a href="#Enterprise Deployement Model">
-              <i class="bi bi-circle"></i><span>Enterprise Deployment Model</span>
-            </a>
-          </li>
-          <li>
-            <a href="#What can I do with Authenion">
-              <i class="bi bi-circle"></i><span>What can I do with Authenion?</span>
-            </a>
-          </li>
-          <li>
-            <a href="#How does Authenion work">
-              <i class="bi bi-circle"></i><span>How does Authenion work?</span>
-            </a>
-          </li> 
-          <li>
-            <a href="#What can I Configure with Authenion">
-              <i class="bi bi-circle"></i><span>What can I Configure with Authenion?</span>
-            </a>
-          </li>
-          <!--<li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span></span>
-            </a>
-          </li>-->
-        </ul>
-      </li><!-- End Forms Nav -->
+			<li>
+				<a href="#pre-reqs section">
+				  <i class="bi bi-circle"></i><span>How does the EBS Integration Kit work?</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="#install-authenion section">
+				<i class="bi bi-circle"></i><span>Install Authenion</span>
+				</a>
+			  </li> 
+			   <li>
+				<a href="#setup section">
+				  <i class="bi bi-circle"></i><span>Setup Authenion</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="#start-stop section">
+				  <i class="bi bi-circle"></i><span>Start & Stop Services</span>
+				</a>
+			  </li> 
+			   <li>
+				<a href="#health-check section">
+				  <i class="bi bi-circle"></i><span>Authenion Health-check</span>
+				</a>
+			  </li>
+			  <li>
+				<a href="#idp-cert section">
+				  <i class="bi bi-circle"></i><span>Install Identiy Provider's Certificate into Authenion Trust Store</span>
+				</a>
+			  </li> 
+			   <li>
+				<a href="#ssl-cert section">
+				  <i class="bi bi-circle"></i><span>Install SSL Certificate for Authenion</span>
+				</a>
+			  </li>
+			  
+			</ul>
+		  </li><!-- End Tables Nav -->
 
 
 
@@ -2099,7 +2105,26 @@ status page also displays your authenion license information. </p>
 </div><!--Configure identity provider-->
 
 
+<!-- ### How does the EBS Integration Kit work ### -->
+<h4><b>How does the EBS Integration Kit work?</b></h4>
 
+<br>
+<img src="assets/img/pg-1.png" alt=""
+	class="col-images-intro"/>
+<br>
+<br>
+
+<p class="col-para">The EBS Integration Kit is a light-weight java
+	application which can be deployed in the PingFederate
+	jetty-container which eliminates the need for dedicated server/hardware.
+	The EIK is OpenID Connect
+	Compliant as a resource server and can be configured with PingFederate
+	to receive Authentication and
+	Authorization tokens. The EBS Integration Kit communicates with the
+	Oracle E-Business Suite Database
+	for Session creation and optional user-provisioning if required.</p>
+<br>
+</div>
 
 
 
