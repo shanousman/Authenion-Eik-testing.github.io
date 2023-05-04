@@ -398,7 +398,14 @@
           <i class="bi bi-journal-text"></i><span>Ebiz Configuration</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-		
+	
+			<li>
+				<a href="#pre-reqs section">
+				  <i class="bi bi-circle"></i><span>Introduction to EBS</span>
+				</a>
+			  </li>
+			  <li>
+
 			<li>
 				<a href="#pre-reqs section">
 				  <i class="bi bi-circle"></i><span>How does the EBS Integration Kit work?</span>
@@ -406,7 +413,7 @@
 			  </li>
 			  <li>
 				<a href="#install-authenion section">
-				<i class="bi bi-circle"></i><span>Install Authenion</span>
+				<i class="bi bi-circle"></i><span>Features</span>
 				</a>
 			  </li> 
 			   <li>
@@ -2103,7 +2110,18 @@ status page also displays your authenion license information. </p>
 
 
 </div><!--Configure identity provider-->
-
+<p class="col-para">The EBS Integration Kit is a light-weight java
+	application which can be deployed on 
+	Identity Providers
+	jetty-container which eliminates the need for dedicated server/hardware.
+	The EIK is OpenID Connect
+	Compliant as a resource server and can be configured with any IDP
+	to receive Authentication and
+	Authorization tokens. The EBS Integration Kit communicates with the
+	Oracle E-Business Suite Database
+	for Session creation and optional user-provisioning if required.</p>
+<br>
+</div>
 
 <!-- ### How does the EBS Integration Kit work ### -->
 <h4><b>How does the EBS Integration Kit work?</b></h4>
@@ -2114,17 +2132,7 @@ status page also displays your authenion license information. </p>
 <br>
 <br>
 
-<p class="col-para">The EBS Integration Kit is a light-weight java
-	application which can be deployed in the PingFederate
-	jetty-container which eliminates the need for dedicated server/hardware.
-	The EIK is OpenID Connect
-	Compliant as a resource server and can be configured with PingFederate
-	to receive Authentication and
-	Authorization tokens. The EBS Integration Kit communicates with the
-	Oracle E-Business Suite Database
-	for Session creation and optional user-provisioning if required.</p>
-<br>
-</div>
+
 
 
 
