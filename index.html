@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -168,7 +169,7 @@
      
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Release Notes</span>
         </a>
@@ -221,12 +222,12 @@
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
          <li>
           <a href="#SupportedOS">
-              <i class="bi bi-circle"></i><span>	Supported Operating Systems </span>
+              <i class="bi bi-circle"></i><span>Supported Operating Systems </span>
             </a>
           </li>
           <li>
             <a href="#LinuxUserrequirements">
-              <i class="bi bi-circle"></i><span>	Linux User requirements in the Authenion Server</span>
+              <i class="bi bi-circle"></i><span>Linux User requirements in the Authenion Server</span>
             </a>
           </li>
           <li>
@@ -305,7 +306,7 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="#Applications / Dashboard page"">
+            <a href="#Applications / Dashboard page">
               <i class="bi bi-circle"></i><span>Dashboard/Applications</span>
             </a>
           </li>
@@ -393,7 +394,12 @@
       </li><!-- End Icons Nav -->
 
       <li class="nav-heading"></li>
-
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Release Notes</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
       
 
       
@@ -407,30 +413,112 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h2><b><p style="font-size: 2.5rem;color: #031128">Authenion</p></b></h2>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html"></a></li>
-		
-		  <!--<li class="breadcrumb-item active"></li>-->
-        </ol>
-      </nav>
+     <p>Authenion Documentation</p>
+
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
-      <div class="row">
+	<!----->
 
+	<div class="body-main" data-test="bodyContent">
+		
+	<!-- Tiles -->
+		
+		<div class="tiles">
+			<div>
+				<p class="tile-title" data-test="tile">
+					  
+						 Release Notes
+						
+				</p>
+					<p class="tile-subtitle">Release summary with Features & Enhancements and bug fixes.</p>
+			 </div>
+			<div>
+				<a href="#GettingStarted">
+				<p class="tile-title" data-test="tile">
+							 Getting Started
+			   </p>
+				<p class="tile-subtitle">
+					Authenion platform and it's standards to protect Oracle Enterprise Applications
+				</p>
+			</a>
+			  </div>
+			 <div>
+				
+               <a href="#Installation">
+				<p class="tile-title" data-test="tile">
+				   Installation
+				</p>
+				<p class="tile-subtitle">Installation & Configuration instructions for Authenion
+				</p>
+				</a>
+			 </div>
+		</div>
+		
+		<div class="tiles">
+			<div>
+				
+               <a href="#Console Navigation & Configurations">
+				<p class="tile-title" data-test="tile">
+				  	  Console Navigation & Configurations
+				</p>
+				<p class="tile-subtitle">UI Navigation and steps for accessing & configuring it</p>
+			</a>
+			</div>
+			
+			<div>
+				<a href="#Configure your Identity Provider">
+				<p class="tile-title" data-test="tile">
+				  Configure your Identity Provider 
+				</p>
+				<p class="tile-subtitle">Integration requirements to connect with your Enterprise Identity Provider.</p>
+			</a>
+			</div>
+			<div>
+				<p class="tile-title" data-test="tile">
+				
+				Application Integration
+				
+				</p>
+				<p class="tile-subtitle">On-boarding the target Applications into Authenion for SSO</p>
+			</div>
+		</div>
+		<br />
+	</div>
+
+
+<!---->
+	
+    <section class="section dashboard">
         <!-- Left side columns -->
         <div class="col-lg-8">
 			<div class="row">
 				<div>
-					<h4><p style="font-size: 0.9rem; color: #031128">Last modified :
-					<script>document.write(new Date().toLocaleDateString());</script> </p> </h4>
-					<p class="col-para"> Authenion enables single sign-on (SSO) solution for Oracle applications. Authenion integrates with standard OpenID Connect providers in the market such as PingFederate, PingOne, Azure, etc., for authentication related events and on the other end, it connects with the Oracle apps to securely transfer the SSO related details to the applications. Authenion will be the access management layer having PingFederate as the Identity Provider.</p> <br>
-
 					<!-- ### RELEASE NOTES ### -->
-					<h4><b>Release Notes</b></h4>
-					<p class="col-para">The release notes summarize the changes in the current and previous product features. The Authenion enables a secure Single Sign-On (SSO) solution for Oracle proprietary applications. The product uses PingFederate (or) any other standard OpenID Connect provider as Identity Provider for authentication related events</p><br>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Release Notes</h4>
+					<p class="col-sub-headings"><b>Release: 2023</b></p>
+					<p class="col-para">Deployment: April 2023</p>
+					<p class="col-para">Software Download: <a href="https://support.likemindsconsulting.com" target="_blank">LikeMinds Helpdesk portal</a></p>
+					<p class="col-sub-headings"><b>Release Summary</b></p>
+					<p class="col-para">Authenion-2.0 version is now generally available. Authenion-2.0 release has new features, bug fixes, security enhancements and updated documentation.</p>
+					<p class="col-sub-headings"><b>Features & Enhancements</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Admins can now configure Authenion through the Administrative console. Admins can onboard/manage target Applications, OIDC Providers, Product License and lot more through the administrative console.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion administrative console is hosted by LikeMinds and is available at <a href="https://launch.authenion.com/" target="_blank">Admin UI.</a></p></li>
+						<li><p class="col-para-bulletpoints">The logging framework has been changed to Apache Log4j2 from Logback. Audit logging is now available for recording the event occurance, type, time and responsible user or service.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion Cluster is available and it provides high-availability & scalability. Authenion has inbuilt load balancer for its backend connections. However, Authenion still rquires a network load balancer to automatically balance traffic in the cluster.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion instance status can be monitored through the console. A health-check endpoint is also available to monitor its status through any monitoring tools.</p></li>
+					</ul>
+					<p class="col-sub-headings"><b>Fixes</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">AQ4-2022-1001: Multiple occurances of SSO transaction in authenion-engine logs.</a></p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1001: Authenion engine log recycling and log file size limit to 10MB.</p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1002: REST API calls authorization for Authenion agent.</p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1003: Cookie is configured with SameSite attribute</p></li>
+						<li><p class="col-para-bulletpoints">AQ2-2023-1006: Multiple sync requests to the same Agent APIs.</p></li>
+						<li><p class="col-para-bulletpoints">AQ2-2023-1008: Header Mapping page shows blank screen when there is no data present in OIDC claims.</p></li>
+					</ul>
+
+					<br />
 				</div>
 
 				
@@ -479,14 +567,16 @@
 						<br>
 					</ul> -->
 				</div>
-
+		<br />
 				<!-- ### GETTING STARTED ### -->
+			<!--<div style="width:800px; background-color:lightgrey;">-->
 			<div>
-				<h4><b>Getting Started</b></h4>
+				<a style="padding:32px" name="GettingStarted"></a>
+				<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Getting Started</h4>
 				<p class="col-para">This guide provides information about getting started with Authenion to deploy a secure and scalable platform to enable single sign-on (SSO) to Oracle applications based on the security and industry standards.</p>
 				<a style="padding:32px" name="Introduction"></a>
 				<p class="col-sub-headings"><b>1. Introduction</b></p>
-				<p class="col-para">Authenion enables single sign-on (SSO) solution for Oracle applications. Authenion integrates with standard OpenID Connect providers in the market such as PingFederate, PingOne, Azure, etc., for authentication related events and on the other end, it connects with the Oracle apps to securely transfer the SSO related details to the applications. Authenion will be the access management layer having PingFederate as the Identity Provider.</p>
+				<p class="col-para">Authenion enables single sign-on (SSO) solution for Oracle applications. Authenion integrates with standard OpenID Connect providers in the market such as PingFederate, PingOne, Azure, etc., for authentication related events and on the other end, it connects with the Oracle apps to securely transfer the SSO related details to the applications.</p>
 				<img src="assets/img/authenion-intro.png" alt="" class="col-images-intro" /> <br>
 
 				<a style="padding:32px" name="Enterprise Deployement Model"></a>
@@ -686,7 +776,8 @@
 
         <!-- ### SYSTEM REQUIREMENTS ### -->
 				<div>
-					<h4><b>System Requirements</b></h4>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">System Requirements</h4>
+					
 					<p class="col-para">The following requirements should be met for Authenion installation. Authenion qualifies & certifies the following configurations that they are compatible with the product. Authenion supports IPv4 addressing. </p>
 					<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5" >
 					
@@ -801,7 +892,8 @@
 				<!-- ### INSTALLATION ### -->
 				<div>
 					<!-- <a name="install-authenion section"></a> -->
-					<h4><b>Installation</b></h4>
+					<a style="padding:32px" name="Installation"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Installation</h4>
                     <p class="col-para">This section provides instructions for installing, configuring & starting/stopping Authenion product. Authenion can be installed on the Linux servers. For the System requirements, please visit System Requirements section.</p>
                      <a style="padding:32px" name="pre-reqs section"></a>
                      <p class="col-sub-headings"><b>1. Pre-requisites</b></p>
@@ -1020,7 +1112,8 @@
 				<!-- ### UI & NAVIGATION ### -->
 				<div>
 					<!-- <a name="install-authenion section"></a> -->
-					<h4><b>Console Navigation & Configurations</b></h4>
+					<a style="padding: 35px" name="Console Navigation & Configurations"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Console Navigation & Configurations</h4>
 					<p class="col-para">This section describes the UI of Authenion (Admin Console) and its navigation and provides steps for accessing and configuring it. Access the Authenion UI by clicking <a href="https://launch.authenion.com">Administrative Consle</a></p>
 
 
@@ -1265,7 +1358,7 @@
 									                    <ul>
 										                  <li class="li" style="list-style-type: none;margin-top:10px;">https://authenion.example.com:8090</li>
 										               
-															<li class="li" style="list-style-type: none;font-size:12px;max-width:500px;background-color:#CCE0F0;"><i><b>Note:</b> If the Authenion is configured in cluster, enter the <b>Authenion Instances</b> value from all the Authenion servers. The default port is 8090 and enabled with HTTPS. Supports multiple entries.</i>
+															<li class="li" style="list-style-type: none;font-size:12px;max-width:500px;background-color:#f5f5f6;"><i><b>Note:</b> If the Authenion is configured in cluster, enter the <b>Authenion Instances</b> value from all the Authenion servers. The default port is 8090 and enabled with HTTPS. Supports multiple entries.</i>
 															</ul>
 								                       </td>
 													   
@@ -1581,7 +1674,7 @@
 								<!-- Application Hosts -->	
 								<div>
 									<a style="padding: 35px" name="Application Hosts"></a>
-									   <p class="col-sub-headings"><b>7. Application Hosts </b></p>
+									   <p class="col-sub-headings"><b>7. Application Hosts </b><p>
 										<p class="col-para">Applications Hosts are the target applications or the backend application servers that Authenion is protecting through a
 											gateway architecture. These target application’s access requests are validated by Authenion before they are forwarded. </p>
 											<img src="assets/img/BackendServer.png" alt="" class="col-images-intro" /> <br>
@@ -1675,8 +1768,8 @@
 										<!-- table ### -->
 										<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
 											<tr>
-											   <th class="symcomponent" >System component</th>
-											  <th class="symcomponent">Requirements</th>
+												<th class="symcomponent">System components&nbsp;&nbsp;&emsp;&emsp;</th>
+												<th class="symcomponent">Requirements&nbsp;&emsp;&emsp;&emsp;&emsp;</th>
 											</tr>
 					 
 											<tbody class="tbody">
@@ -1705,11 +1798,11 @@
 											 <!--App Header -->  
 														 <tr>
 															 <td>
-															 <p>App Header  </p>
+															 <p><b>App Header </b></p>
 															  </td>
 															  <td>
 															   <ul>
-																 <li class="li">OIDC Claim</li>
+																 <p><b>OIDC Claims </b></p>
 															   </ul>
 															 </td>
 														 </tr>
@@ -1848,10 +1941,13 @@ status page also displays your authenion license information. </p>
 									    	<img style="margin-left:55px;" src="assets/img/sync1.png" alt="" class="col-images-intro" /> <br>
 											</div>
                                            <br>
+			<br />
 				
 				<!-- ### CONFIGURE IDENTITY PROVIDER ### -->
 				<div>
-					<h4><b>Configure your Identity Provider</b></h4>
+					<a  style="padding: 38px" name="Configure your Identity Provider"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Configure your Identity Provider</h4>
+					
 					<p class="col-para">This section provides the steps required to configure Authenion with the Identity/Token Providers like PingFederate, PingOne, Microsoft Azure, etc. The integration will be established through OAuth and OpenID Connect protocols.</p>
 
 					<!--PingFederate as IdP-->
