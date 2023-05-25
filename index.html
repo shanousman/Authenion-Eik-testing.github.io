@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -185,11 +184,15 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
+  
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
      
-
+		<li class="nav-item">
+			<h1 class="nav-heading" style="font-size: 16px; font-weight: bold;">Authenion</h1>
+		  </li>
+	
       <li class="nav-item">
         <a class="nav-link collapsed" href="#ReleaseNotes">
           <!--<i class="bi bi-grid"></i>-->
@@ -235,7 +238,7 @@
             </a>
           </li>-->
         </ul>
-
+      </li><!-- End Forms Nav -->
 	  
 	   <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#SystemRequirements">
@@ -364,7 +367,7 @@
               <!--<i class="bi bi-circle"></i>--><span>Application Hosts</span>
             </a>
           </li>
-		</a>
+            </a>
           </li>
           <li>
             <a href="#Header Mapping" class="nav-link-sub collapsed">
@@ -413,60 +416,194 @@
           </li>
           
         </ul>
-      </li><!-- End Icons Nav -->
+      </li>
+	  
+	  <li class="nav-item">
+		<h1 class="nav-heading" style="font-size: 16px; font-weight: bold;">EBS Integration Kit</h1>
+	  </li>
 
-      <li class="nav-heading"></li>
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#EIK-ReleaseNotes">
+          <!--<i class="bi bi-grid"></i>-->
+          <span>Release Notes</span>
+        </a>
+      </li>
 
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#identity-nav" data-bs-toggle="collapse" href="EIK-Getting-started">
+		  <!--<i class="bi bi-key"></i>-->
+		  <span>Getting Started</span>
+		  <i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="identity-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+		  <li>
+			<a href="#EIK-introduction" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle">--></i>
+			  <span>Introduction</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-features" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Features</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-benefits" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Benefits</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-how-it-works" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>How does EIK Work?</span>
+			</a>
+		  </li>
+		</ul>
+	  </li>
+	  
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#identity-provider-nav" data-bs-toggle="collapse" href="#">
+		  <!--<i class="bi bi-gear"></i>-->
+		  <span>Configure Your Identity Provider</span>
+		  <i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="identity-provider-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+		  <li>
+			<a href="#EIK-configuring-OpenIDConnect" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle">--></i>
+			  <span>OpenIDConnect Configuration</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-configuring-OAuth-Client" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Configuring the OAuth Client</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-configuring-OAuth-Client-additional-information" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Additional Information</span>
+			</a>
+		  </li>
+		  
+		</ul>
+	  </li>
+	  
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#ssl-cert-nav" data-bs-toggle="collapse" href="#">
+		  <!--<i class="bi bi-shield-lock"></i>-->
+		  <span>Configure the SSL cert from the IDP</span>
+		  <i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="ssl-cert-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+		  <li>
+			<a href="#obtain-ssl-cert" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle">--></i>
+			  <span>Obtain SSL cert from the IDP</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#install-ssl-cert" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Install SSL cert in the Java truster keystore</span>
+			</a>
+		  </li>
+		</ul>
+	  </li>
+
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#installation-nav" data-bs-toggle="collapse" href="#">
+		  <!--<i class="bi bi-download"></i>-->
+		  <span>Installation</span>
+		  <i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="installation-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+			<li>
+				<a href="#EIK-install-EIKHOME" class="nav-link-sub collapsed">
+				  <!--<i class="bi bi-circle">--></i>
+				  <span>Setting the EIK_HOME Environment Variable</span>
+				</a>
+			  </li>
+			<li>
+			<a href="#EIK-install-config-file-generation" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle">--></i>
+			  <span>EIKAuth Config File Generation</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-install-dbcx-file-generation" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>EBS DataSource (DBCX) File Creation</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-install-log4j-deployment" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Deploying the log4j2.xml File</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-install-cacerts-file-deployment" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Deploying the cacerts File</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-install-security-properties-file-deployment" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Deploying the security.properties File</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#EIK-install-ebswar-deployment" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Deploying EBSAuth.war binary</span>
+			</a>
+		  </li>
+		</ul>
+	  </li>
+
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#system-profile-nav" data-bs-toggle="collapse" href="#">
+		  <!--<i class="bi bi-gear-fill"></i>-->
+		  <span>System Profile Parameter changes in EBS</span>
+		  <i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="system-profile-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+		  <li>
+			<a href="#EIK-EBS-system-profile-parameter-changes" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle">--></i>
+			  <span>EBS System Profile Changes</span>
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="#EIK-EBS-sso-testing" class="nav-link-sub collapsed">
+			  <!--<i class="bi bi-circle"></i>-->
+			  <span>Testing SSO</span>
+			</a>
+		  </li>
+		</ul>
+	  </li>
+	  
+	  
+	  
+	  
+	 
+	
+	 
+	 
+	  <!-- End Icons Nav -->
+<!-- 
+      <li class="nav-heading">EBiz Configuration</li>
+	  <p class="tile-subtitle"><b>EBiz Configuration<b></p></a> -->
       
 
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="ebizDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <!--<i class="bi bi-journal-text"></i>--><span>Ebiz Configuration</span><i class="bi bi-chevron-down ms-auto"></i>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="ebizDropdown">
-    <li>
-      <a class="dropdown-item" href="#Introduction">
-        <!--<i class="bi bi-circle"></i>--><span>Introduction</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="#Enterprise Deployement Model">
-        <!--<i class="bi bi-circle"></i>--><span>How does the EBS KIT work</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="#What can I do with Authenion">
-        <!--<i class="bi bi-circle"></i>--><span>What can I do with Authenion?</span>
-      </a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="#How does Authenion work">
-        <!--<i class="bi bi-circle"></i>--><span>How does Authenion work?</span>
-      </a>
-    </li> 
-    <li>
-      <a class="dropdown-item" href="#What can I Configure with Authenion">
-        <!--<i class="bi bi-circle"></i>--><span>What can I Configure with Authenion?</span>
-      </a>
-    </li>
-    <!--<li>
-      <a class="dropdown-item" href="forms-validation.html">
-        <i class="bi bi-circle"></i><span></span>
-      </a>
-    </li>-->
-  </ul>
-</li>
-
-
-
-
-
-
-
-
-      </li><!-- End Forms Nav -->
       
-      </li><!-- End Blank Page Nav -->
+      <!-- End Blank Page Nav -->
 
     </ul>
 
@@ -549,6 +686,8 @@
 		</div>
 		<br />
 	</div>
+
+	
 
 
 <!---->
@@ -654,7 +793,7 @@
 					<li><p class="col-para-bulletpoints">This deployment model can be set up quickly without disrupting the applications. The Authenion will not be installed on separate servers from the application web servers.</p></li>
 					<li><p class="col-para-bulletpoints">With the fewer component architecture, it is easy to identify issues and troubleshoot. All transactions are logged, and it is easier to view any specific events.</p></li>
 				</ul>
-				<img src="assets/img/product-1.png" alt="" class="col-images-intro">
+				<img src="assets/img/deploymentmodel.png" alt="" class="col-images-intro">
 
 				<a style="padding:32px" name="What can I do with Authenion"></a>
 				<p class="col-sub-headings"><b>3. What can I do with Authenion?</b></p>
@@ -2214,7 +2353,346 @@ status page also displays your authenion license information. </p>
 						<li><p class="col-para-bulletpoints">The Authenion client application need to access resources in a web API. You can use the Microsoft Azure platform for authorizing scopes, permissions-based access to fetch the appropriate user data.</p></li>
 						<li><p class="col-para-bulletpoints">The user data can be added as claims using the OIDC userinfo endpoint. Any attributes that are required by the target application can ab added as claims in the userinfo endpoint.</p></li>
 					</ol><br />
+					
+					<!--EBS Integration Kit Related Content Starts Here-->
+					<div class="pagetitle">
+						<p>EBS Integration Kit Documentation</p>
+					</div>
 
+					<a style="padding:32px" name="EIK-ReleaseNotes"></a>
+					<p class="col-sub-headings"><b>Release: 2022</b></p>
+					<p class="col-para">Deployment: October 2022</p>
+					<p class="col-para">Software Download: <a href="https://support.likemindsconsulting.com" target="_blank">LikeMinds Helpdesk portal</a></p>
+					<p class="col-sub-headings"><b>Release Summary</b></p>
+					<p class="col-para">EIK-2.3.0.2 version is now generally available. EIK-2.3.0.2 release has new features, security enhancements and updated documentation.</p>
+					<p class="col-sub-headings"><b>Features & Enhancements</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">EIK 2.3.0.2 now supports PingFederate 11.0.2</p></li>
+						<li><p class="col-para-bulletpoints">The cacerts file has been externalized.</a></p></li>
+					</ul>	
+					<p class="col-sub-headings"><b>Security Enhancements</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">EIK 2.3.0.2 uses Log4j Version 2.17.0 to address the vulnerabilities stated in CVE-2021-44228, CVE-2021-45046, and CVE-2021-45105.</p></li>
+						<li><p class="col-para-bulletpoints">Added functionality to set Security Headers and SameSite value in Cookies generated</a></p></li>
+						<li><p class="col-para-bulletpoints">Addressed formatting issues and issues in Cookie Service for setting multiple cookies and handling exception cases where state Cookie validation is enabled and configurable</a></p></li>
+						<li><p class="col-para-bulletpoints">The cacerts file has been externalized</a></p></li>
+					</ul>	
+				
+
+					<div>
+						<a style="padding: 32px;" name="EIK-Getting-started"></a>
+						<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size: 26px; font-weight: 600;">Getting Started</h4>
+						<p class="col-para">This guide provides information about getting started with EIK to to enable single sign-on (SSO) to theOracle E-Business Suite</p>
+					  
+						<a style="padding: 32px;" name="EIK-introduction"></a>
+						<p class="col-sub-headings"><b>1. Introduction</b></p>
+						<p class="col-para">The EBS Integration Kit is a light-weight java application which can be deployed in a jetty-container such as Apache Tomcat or Weblogic. The EIK is OpenID Connect Compliant as a resource server and can be configured with any OIDC Provider including PingFederate, PingOne, Azure AD, Okta etc. to receive Authentication and Authorization tokens. The EBS Integration Kit communicates with the Oracle E-Business Suite Database for Session creation and optional user-provisioning if required</p>
+						<img src="assets/img/eik-images/eik-intro.jpg" alt="" class="col-images-intro"/>
+						<!-- Add any additional content or elements specific to Subsection 1 -->
+					  
+						<a style="padding: 32px;" name="EIK-features"></a>
+						<p class="col-sub-headings"><b>2. Features</b></p>
+						<!--	<p class="col-para">Subsection 2 content.</p> -->
+						<ul style="margin-left:30px;" class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">Works seamlessly with Any OIDC compliant IDP Provider</p></li>
+							<li><p class="col-para-bulletpoints">Eliminates the dependency on additional Oracle components like Oracle Internet Directory or Oracle EBS AccessGate</a></p></li>
+							<li><p class="col-para-bulletpoints">Provides flexibility of Deployment Methods: The EIK can be installed on the PingFederate server or any other J2EE container</p></li>
+							<li><p class="col-para-bulletpoints">Authenion Cluster is available and it provides high-availability & scalability. Authenion has inbuilt load balancer for its backend connections. However, Authenion still requires a network load balancer to automatically balance traffic in the cluster.</p></li>
+							<li><p class="col-para-bulletpoints">Supports Just-In-Time provisioning</p></li>
+						</ul>
+						<!-- Add any additional content or elements specific to Subsection 2 -->
+						<a style="padding: 32px;" name="EIK-benefits"></a>
+						<p class="col-sub-headings"><b>3. Benefits</b></p>
+						<!--	<p class="col-para">Subsection 2 content.</p> -->
+						<ul style="margin-left:30px;" class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">Helps achieve painless integration of modern IAM into your existing architecture</p></li>
+							<li><p class="col-para-bulletpoints">Enables you to modernize or migrate off legacy IAM without disrupting critical access to Oracle E-Business Suite</a></p></li>
+							<li><p class="col-para-bulletpoints">Frees you from vendor lock-in with legacy IAM licensing—you will only require your EBS license</p></li>
+							<li><p class="col-para-bulletpoints">Requires no provisioning of additional hardware components</p></li>
+					
+						</ul>
+						<!-- Add more subsections as needed -->
+						<a style="padding: 32px;" name="EIK-how-it-works"></a>
+						<p class="col-sub-headings"><b>4. How does EIK work?</b></p>
+						<!--	<p class="col-para">Subsection 2 content.</p> -->
+						<ol class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">The user tries to access Oracle EBS</b></a>.</p></li>
+							<li><p class="col-para-bulletpoints">EBS redirects the user to the EIK</b>.</p></li>
+							<li><p class="col-para-bulletpoints">EIK redirects the user to the configured OAuth server for Authentication and Authorization</p></li>
+							<li><p class="col-para-bulletpoints">The OAuth server returns user identity information to the EIK</i></p></li>
+							<li><p class="col-para-bulletpoints">The existence of the authenticated user will be checked against the EBS Database. If the user exists in the EBS DB, an EBS session would be created, and the user would be allowed access to the requested page in EBS.</p></li>
+							<li><p class="col-para-bulletpoints">If the authenticated user does not exist in the EBS DB, the user would not be authorized to access the EBS Application.</p></li>
+							<li><p class="col-para-bulletpoints">If Just-In-Time Provisioning is enabled, authenticated users not present in the EBS DB would be provisioned by the EBS IKT, and EBS Sessions would then be created, thereby giving access to the EBS Application</p></li>
+						</ol>
+					  </div>
+
+
+					  <div>
+						<a style="padding: 32px;" name="EIK-configuring-oidc-provider"></a>
+						<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size: 26px; font-weight: 600;">Configure your Identity Provider</h4>
+						<p class="col-para">The following steps cover the OIDC-related configurations common to all OIDC providers</p>
+					  
+						<a style="padding: 32px;" name="EIK-configuring-OpenIDConnect"></a>
+						<p class="col-sub-headings"><b>1. OpenIDConnect Configuration</b></p>
+						<p class="col-para">The OpenIDConnect Configuration Specific to the EIK should have the <b>scope</B> set as <b>openid</B> with the attribute value <b>eik_username</B> passed as the claim via the <b>id token</b> and/or the <b>user_info endpoint</b></p>
+						<p class="col-para">In your identity provider, map the appropriate user id value used by EBS to the <b>eik_username</b> claim used in the OpenIDConnect scope Configuration  </b></b></p>
+						<!-- Add any additional content or elements specific to Subsection 1 -->
+					  
+						<a style="padding: 32px;" name="EIK-configuring-OAuth-Client"></a>
+						<p class="col-sub-headings"><b>2. Configuring the OAuth Client</b></p>
+					<!--	<p class="col-para">Create an OAuth client in your OIDC provider</p> -->
+						<ol class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">Create an OAuth client in your OIDC provider</b></a>.</p></li>
+							<li><p class="col-para-bulletpoints">Map the OpenIDConnect configuration created earlier to this client</b>.</p></li>
+							<li><p class="col-para-bulletpoints">The Authorization Code grant type should be Selected</b>.</p></li>
+							<li><p class="col-para-bulletpoints">Create the Client and save the OAuth client related information corresponding with the below values. These will be used to configure EIK with the token provider</p></li>
+						
+							<p class="col-para">authentication_server_url</b></b></p>
+							<p class="col-para">token_endpoint_url</b></b></p>
+							<p class="col-para">introspect_url</b></b></p>
+							<p class="col-para">jwks_validation_url</b></b></p>
+							<p class="col-para">grant_type</b></b></p>
+							<p class="col-para">introspect_url</b></b></p>
+							<p class="col-para">client_id</b></b></p>
+							<p class="col-para">client_secret</b></b></p>
+							<p class="col-para">userinfo_url</b></b></p>
+						
+							<a style="padding: 32px;" name="EIK-configuring-OAuth-Client-additional-information"></a>
+							<li>
+								
+								<p class="col-para-bulletpoints">For Additional Information on setting up OAuth clients on a few other identity providers: 
+								  <a href="#PingFederate as the Token Provider" target="_blank">PingFederate</a>, 
+								  <a href="#Microsoft Azure Active Directory as the Token Provider" target="_blank">Azure AD</a>, 
+							<!--	  <a href="https://www.pingidentity.com/products/pingone.html" target="_blank">PingOne</a>, -->
+								  <a href="https://help.okta.com/en-us/Content/Topics/Apps/Apps_App_Integration_Wizard_OIDC.htm" target="_blank">Okta</a>
+								  
+								</p>
+							  </li>
+							
+						</ol>
+						<!-- Add any additional content or elements specific to Subsection 2 -->
+					  
+						<!-- Add more subsections as needed -->
+					  
+					  </div>
+					  <div>
+						<a style="padding: 32px;" name="SectionName"></a>
+						<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size: 26px; font-weight: 600;">Installation</h4>
+						<p class="col-para">This section provides instructions for installing and configuring EIK.</p>
+						
+						<a style="padding: 32px;" name="EIK-install-EIKHOME"></a>
+						<p class="col-sub-headings"><b>1. Setting the EIK_HOME Environment Variable</b></p>
+						<p class="col-para">An environment variable ‘EIK_HOME’ should be set in the Java Application server before deploying the EBS Integration Kit</p>
+						<ol class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">Select A directory location that the user has permissions to read and write</b></a>.</p></li>
+							<li><p class="col-para-bulletpoints">Here, Create a new directory named <b>“EBSAuth”</b>.</p></li>
+							<li><p class="col-para-bulletpoints">Now, Place the provided EBS IKT license file “ebsauth.lic” in the <b>/directory/path/to/EBSAuth</b> directory</b>.</p></li>
+							<li><p class="col-para-bulletpoints">Navigate to user’s base path using cd ~ and set the environmental variable for EIK_HOME in the .bash profile file</p></li>
+							<p class="col-para">vi .bash_profile</p>
+							<p class="col-para">Using the above directory path <b>/directory/path/to/EBSAuth</b></p>
+							<p class="col-para">Set EIK_HOME using this command: export EIK_HOME=<b>/directory/path/to/</b></p>
+							<li><p class="col-para-bulletpoints">Save and close the file</p></li>
+							<li><p class="col-para-bulletpoints">Enter the following command to source the bash file: <b>. ./.bash_profile</b></p></li>
+							<li><p class="col-para-bulletpoints">Verify the new settings using the following command: <b>echo $EIK_HOME</b></p></li>
+							<li><p class="col-para-bulletpoints">Note: If EIK is deployed in a clustered setup for high-availability, steps 1-7 have to be replicated on all nodes</b></p></li>
+						</ol>
+						<a style="padding: 32px;" name="EIK-install-config-file-generation"></a>
+						<p class="col-sub-headings"><b>2. EIKAuth Config File Generation</b></p>
+						<ol class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">The JAR file EIKutility.jar needs to be placed in the $EIK_HOME directory created in the previous section</b></a>.</p></li>
+							<li><p class="col-para-bulletpoints">Open terminal/command prompt (as Administrator) and navigate to EIK_HOME directory and execute the following command:</li>
+								<p class="col-para"><b>java -cp EIKutility.jar com.likeminds.EBSAuth.EIKAdminUtility</b>></p>
+							<li><p class="col-para-bulletpoints">On running the command, we get a dialog box as follows, Enter all values as per the configuration for all the fields using the template given below:</p></li>
+							<img src="assets/img/eik-images/eik-config-file-generator.jpg" alt="" class="col-images-intro"/>
+							<p><b>icx_cookie_domain</b> = <"domain name"> (the "." period should precede the root domain name)</p>
+								<p><b>icx_cookie_path</b> = /</p>
+								<p><b>ebs_landing_page</b> = <"EBS Home Page URL"></p>
+								<p><b>ebs_logout_page</b> = <"token-provider-domain-name">:/example/single/logout/endpoint</p>
+								<p><b>authentication_server_url</b> = <"token-provider-domain-name">/example/authorization/server/endpoint</p>
+								<p><b>token_endpoint_url</b> = <"token-provider-domain-name">/example/access/token/endpoint</p>
+								<p><b>introspect_url</b> = <"token-provider-domain-name">/example/introspect/endpoint</p>
+								<p><b>redirect_uri</b> = <"EIK-APPLICATION-SERVER-HOSTNAME">/EBSAuth/handler</p>
+								<p><b>jwks_validation_url</b> = <"token-provider-domain-name">/example/JWKS/endpoint</p>
+								<p><b>grant_type</b> = authorization_code</p>
+								<p><b>auth_type</b> = OIDC</p>
+								<p><b>JIT</b> = false</p>
+								<p><b>Scope</b> = openid (necessary scope to return EBS username from the token provider)</p>
+								<p><b>Authentication Attribute</b> = eik_username (non-editable)</p>
+								<p><b>client_id</b> = ***** # CLIENT_ID created in the OAuth Client at the token provider</p>
+								<p><b>client_secret</b> = ***** # CLIENT_SECRET created created in the OAuth Client at the token provider</p>
+								<p><b>Enter the context path of WAR</b> = <"Context of the war"> (i.e. For EBSAuth.war, context is /EBSAuth)</p>
+								<p><b>Enter the issuer</b> = (OAuth/OIDC issuer)</p>					
+								<p><b>userinfo_url</b>=https://<"token-provider-domain-name">/example/userinfo/endpoint</p>
+								<p><b>trustStorePath</b>= path/to/the/custom/cacerts</p>
+								<p><b>UsePrivateTrustStore</b>=true</p>
+								<p><b>trustStorePassword</b>=<"cacert store password"></p>
+								
+							<li><p class="col-para-bulletpoints">After entering these values in the dialog box, a file named EIKAuth.config gets generated at the $EIK_HOME directory</p></li>
+							<li><p class="col-para-bulletpoints">Now, move the EIKAuth.config file to the following location: <b>/directory/path/to/EBSAuth</b> </p></li>
+							
+						</ol>
+						
+						<!-- Add any additional content or elements specific to Subsection 1 -->
+					  
+						<a style="padding: 32px;" name="EIK-install-dbcx-file-generation"></a>
+						<p class="col-sub-headings"><b>3. EBS DataSource (DBCX) File Creation</b></p>
+						<p class="col-para">Pre-requisite: Before proceeding with the DBCX file generation, a custom user should be created in the EBS Application FND_USER table (Username – EIKUSER) with the UMX|APPS_SCHEMA_CONNECT role enabled.</p>
+						<ol class="col-para-bulletpoints">
+							<li><p class="col-para-bulletpoints">Place the JAR file EBSdatasource.jar in the $EIK_HOME directory & open the terminal/command prompt and navigate to EIK_HOME directory to execute and generate the EBS Datasource file:</b></a>.</p></li>
+							<p class="col-para"><b>java -cp EBSdatasource.jar com.likeminds.ebsauth.v1.EIKDatasource Y</b></p>
+							<p class="col-para">Note: The jar file can also be placed & executed in any server outside of the EIK Application server provided, there should be a connectivity to the EBS Database from the execution source</p>
+							<li><p class="col-para-bulletpoints">In the next step, provide the configuration details of your environment as mentioned in the screenshot:</b></a>.</p></li>
+							<img src="assets/img/eik-images/eik-dbcx-file-generator.jpg" alt="" class="col-images-intro"/>
+							<p><b>Enter the connection factory class:</b> oracle.jdbc.pool.OracleDataSource</p>
+							<p><b>Enter the JDBC URL:</b> jdbc:oracle:thin:@<EBS DB domain name>:<EBS DB Port>:<SID></p>
+							<p>(Use Scan hostnames in case of RAC database)</p>
+							<p><b>Enter APPS username:</b></p>
+							<p><b>Enter APPS password:</b></p>
+							<p><b>Enter Connection pool name:</b> EBSAuth</p>
+							<p><b>Enter initial connection pool size:</b> 10</p>
+							<p><b>Enter min. connection pool size:</b> 10</p>
+							<p><b>Enter max. initial pool size:</b> 50</p>
+							<p><b>Enter timeout check interval (Default is 30 secs):</b> 30</p>
+							<p><b>Enter inactive connection timeout (Default is 0 secs):</b> 30</p>
+							<p><b>Enter validate connection on borrow (true/false):</b> true</p>
+							<p><b>Enter the EIK username:</b> EIKUSER</p>
+							<p><b>Enter the EIK user password:</b></p>
+							<p><b>Enter the Context Path:</b> </Context of the war file></p>
+
+							<li><p class="col-para-bulletpoints">After entering all the above-mentioned values, the EIKUSER will get registered with the following messages:</b></a>.</p></li>
+							<p><b>Connection established</b></p>
+							<p><b>Registering User</b></p>
+							<p><b>User has been registered successfully</b></p>
+							<li><p class="col-para-bulletpoints">As part of the successful execution, a new file EIK.dbcx will be generated in the $EIK_HOME directory.</b></a>.</p></li>
+							<li><p class="col-para-bulletpoints">Now move the EIK.dbcx file to the following location:<b>/directory/path/to/EBSAuth</b></a>.</p></li>
+							<p class="col-para">Note: The jar file can also be placed & executed in any server outside of the EIK Application server provided, there should be a connectivity to the EBS Database from the execution source</p>
+							
+
+						</ol>
+						<!-- Add any additional content or elements specific to Subsection 2 -->
+						<a style="padding: 32px;" name="EIK-install-log4j-deployment"></a>
+						<p class="col-sub-headings"><b>4. Deploying the log4j2.xml File</b></p>
+						<p class="col-para">Move the provided log4j2.xml file to the following location:</p>
+						<p class="col-para"><b>/directory/path/to/EBSAuth</b></p>
+						
+						<!-- Add any additional content or elements specific to Subsection 1 -->
+					  
+						<a style="padding: 32px;" name="EIK-install-cacerts-file-deployment"></a>
+						<p class="col-sub-headings"><b>5. Deploying the cacerts File</b></p>
+						<p class="col-para">Move the provided cacerts file to the following location:</p>
+						<p class="col-para"><b>/directory/path/to/EBSAuth</b></p>
+						
+
+						<a style="padding: 32px;" name="EIK-install-security-properties-file-deployment"></a>
+						<p class="col-sub-headings"><b>6. Deploying the security.properties File</b></p>
+						<p class="col-para">Move the provided security.properties file to the following location:</p>
+						<p class="col-para"><b>/directory/path/to/EBSAuth</b></p>
+						<!-- Add any additional content or elements specific to Subsection 1 -->
+					  
+						<a style="padding: 32px;" name="EIK-install-ebswar-deployment"></a>
+						<p class="col-sub-headings"><b>7. Deploying EBSAuth.war binary</b></p>
+						<p class="col-para">Move the provided EBSAuth.war binary to the Java Application Container directory Where the Jetty Container will be able to run it </p>
+						<!-- Add more subsections as needed -->
+						<p class="col-para"><b>Note: If EIK is deployed in a clustered setup for high-availability, the log4j2.xml, cacerts, EIK.dbcx, EIKAuth.config, security.properties files, and EBSAuth.war  have to be deployed on all nodes</b></p>	
+					  </div>
+					  
+					  <div>
+						<a style="padding: 32px;" name="EIK-EBS-system-profile-parameter-changes-heading"></a>
+						<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size: 26px; font-weight: 600;">System Profile Parameter changes in EBS</h4>
+						<p class="col-para">The following Oracle EBS System Profile changes will enable SSO by delegating the authentication to OIDC-based token providers via EIK.</p>
+					  
+						<a style="padding: 32px;" name="EIK-EBS-system-profile-parameter-changes"></a>
+						<p class="col-sub-headings"><b>1. System Profile Changes</b></p>
+						<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Login into the EBS Application using the System Admin credentials.</b></a>.</p></li>
+						<li><p class="col-para-bulletpoints">Locate and change the following EBS system profiles at Site Level for enabling SSO:</b></a></p></li>
+
+
+						
+<table class="systemrequiremetable" cellpadding="5" cellspacing="5">
+  <tr>
+    <th class="symcomponent">Parameter</th>
+    <th class="symcomponent">Value</th>
+  </tr>
+
+  <tbody class="tbody">
+    <!-- Row 1 -->
+    <tr>
+      <td>
+        <p>Application SSO Type</p>
+      </td>
+      <td>
+        <ul>
+          <li class="li">SSWA w/SSO</li>
+        </ul>
+      </td>
+    </tr>
+
+
+    <!-- Row 3 -->
+    <tr>
+      <td>
+        <p>Application Authenticate Agent</p>
+      </td>
+      <td>
+        <ul>
+          <li class="li">https://&lt;"EIK-application-hostname"&gt;:&lt;port&gt;/EBSAuth</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Row 4 -->
+    <tr>
+      <td>
+        <p>Application SSO Login Types</p>
+      </td>
+      <td>
+        <ul>
+          <li class="li">Both</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Row 5 -->
+    <tr>
+      <td>
+        <p>Application SSO Auto Link User</p>
+      </td>
+      <td>
+        <ul>
+          <li class="li">Enabled</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Row 6 -->
+    <tr>
+      <td>
+        <p>Application SSO LDAP Synchronization</p>
+      </td>
+      <td>
+        <ul>
+          <li class="li">Disabled</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+						<li><p class="col-para-bulletpoints">Restart the EBS Application Server once the changes had been made and this completes the SSO profile parameter changes in Oracle EBS.</b></a>.</p></li>
+						</ol>
+						<a style="padding: 32px;" name="EIK-EBS-sso-testing"></a>
+						<p class="col-sub-headings"><b>2. SSO Testing for Oracle EBS</b></p>
+						<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Enter the URL for SSO of EBS</b></a>.</p></li>
+						<li><p class="col-para-bulletpoints">This URL redirects the user to the server hosting the EIK Application,which will then redirect the browser to the Authorization endpoint of the ODIC token provider with authentication prompt for entering the user credentials</b></a></p></li>
+						<img src="assets/img/eik-images/eik-sso-test-authentication-prompt.jpg" alt="" class="col-images-intro">
+						<li><p class="col-para-bulletpoints">On successful validation of the user credentials, the user will get access to the EBS Homepage.</b></a></p></li>
+						<img src="assets/img/eik-images/eik-sso-test-sso-to-ebs-success.jpg" alt="" class="col-images-intro">
+						<!-- Add any additional content or elements specific to Subsection 2 -->
+						
+						
+					  </div>
 
 </div><!--Configure identity provider-->
 
